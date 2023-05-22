@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Guia Git</title>
+    <link rel="icon" type="image/x-icon" href="assets/git.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+    <img height="120" width="auto" src="data:image/png;base64,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" alt="github-icon">
+    <h1>Guia de comandos Git</h1>
+    <img height="120" width="auto" src="assets/git.png" alt="git-icon">
+</header>
+
+<main>
+    <section>
+        <h1>Sobre o material</h1>
+        <p>
+            Este material aborda os conceitos fundamentais do versionamento de código com o Git listando os comandos básicos e avançados,
+            conceitos sobre a plataforma de hospedagem de código Github e como se inscriver no programa Github Student.
+        </p>
+    </section>
+
+    <section>
+        <h1>Sumário</h1>
+        <ol role="list">
+            <li><a href="#conceito">O que é o Git?</a></li>
+            <li><a href="#comandos-basicos">Comandos básicos do Git </a></li>
+            <li><a href="#comandos-avancados">Comandos avançados do Git </a></li>
+            <li><a href="#github-student">Programa GitHub Student </a></li>
+            <li>Colaboração com o Git</li>
+        </ol>
+    </section>
+
+    <section>
+        <h1 id="conceito">O que é Git?</h1>
+        <div style="display: flex">
+            <div>
+                <p>
+                    Desenvolvido por Linus Torvalds (criador do kernel do Linux) em 2005 surge um sistema de controle de versões
+                    que, futuramente, seria reconhecido e utilizado globalmente.
+                </p>
+                <p>
+                    Tudo começou com o rompimento de relações entre
+                    a comunidade que desenvolvia o kernel do Linux e a BitKeeper.Com esse rompimento, a ferramenta do
+                    BitKeeper passou a ser paga.
+                </p>
+                <p>
+                    Com tudo isso, Linus Torvalds decidiu construir um sistema de controle de versão que tivesse a melhor
+                    performance e usou a experiência que teve com a BitKeeper para construir o Git.
+                </p>
+                <p>
+                    Devido seu grande sucesso no mercado várias empresas começaram a criar plataformas de hospedagem de código-fonte
+                    e arquivos utilizando o Git como controle de versão, um exeplo de plataforma seria o Github, que iremos
+                    abordar logo abaixo.
+                </p>
+            </div>
+            <div>
+                <img height="250" width="180" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/LinuxCon_Europe_Linus_Torvalds_03.jpg/200px-LinuxCon_Europe_Linus_Torvalds_03.jpg" alt="Linus-Torvalds">
+                <p>Fonte: <a target="_blank" href="https://pt.wikipedia.org/wiki/Linus_Torvalds">Wikipédia</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 id="comandos-basicos">Comandos Git Básicos</h1>
+        <p>Os comandos Git básicos são essenciais para começar a usar o Git como ferramenta de controle de versão. Aqui estão alguns comandos comuns com exemplos:</p>
+        <ul>
+            <li><p>Clonar um repositório remoto para o seu ambiente local.
+                Exemplo: <code>git clone https://github.com/seu-usuario/seu-repositorio.git</code></p>
+            </li>
+            <li><p>Criar e gerenciar branches para trabalhar em diferentes fluxos de desenvolvimento.
+                Exemplo: <code>git branch implementacao-login</code></p>
+            </li>
+            <li><p>Alternar entre diferentes branches ou versões do código.
+                Exemplo: <code>git checkout implementacao-login</code></p>
+            </li>
+            <li><p>Adicionar arquivos ou alterações específicas ao próximo commit.
+                Exemplo: <code>git add index.html</code></p>
+            </li>
+            <li><p>Atualizar o repositório local com as alterações mais recentes do repositório remoto.
+                Exemplo: <code>git pull origin implementacao-login</code></p>
+            </li>
+            <li><p>Enviar suas alterações locais para o repositório remoto.
+                Exemplo: <code>git push origin implementacao-login</code></p>
+            </li>
+            <li><p>Buscar as alterações mais recentes do repositório remoto sem mesclá-las ao código local.
+                Exemplo: <code>git fetch origin</code></p>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h1 id="comandos-avancados">Comandos Git Avançados</h1>
+        <p>Além dos comandos básicos, existem comandos Git mais avançados que podem ser úteis durante o desenvolvimento de software. Aqui estão alguns exemplos:</p>
+        <ul>
+            <li>Modificar o commit mais recente com novas alterações ou uma nova mensagem de commit.
+                Exemplo: <code>git commit --amend -m "Mensagem corrigida!"</code></p>
+            </li>
+            <li><p>Configurar variáveis de configuração do Git.
+                Exemplo: <code>git config --global user.name "Seu Nome"</code> </p>
+                <p><strong>Adicionar configurações pra apenas um commit</strong></p>
+                <ul>
+                    <li>É possível setar configurações as configurações e realizar o commit em uma só linha (pra não ter que setar globalmente e correr o risco de alguém pegar a máquina e commitar no seu nome).</li>
+                    <li>Exemplo: <code>git -c "user.name=Gabriel Silva" -c "user.email=silva@gmail.com" commit -m "Mensagem do commit"</code></li>
+                </ul>
+            </li>
+            <li><p>Gerenciar repositórios remotos e suas configurações.
+                Exemplo: <code>git remote add origin &lt;URL-do-repositório-remoto&gt;</code>, <code>git remote remove origin</code>, <code>git remote</code></p>
+            </li>
+            <li><p>Exibir o histórico completo de referências, incluindo commits que não estão mais visíveis.
+                Exemplo: <code>git reflog</code></p>
+            </li>
+            <li><p>Exibir o histórico de commits com detalhes, incluindo autor, data e mensagem.
+                Exemplo: <code>git log</code></p>
+            </li>
+            <li><p>Desfazer um commit específico, criando um novo commit que reverte as alterações.
+                Exemplo: <code>git revert &lt;hash-do-commit&gt;</code></p>
+            </li>
+            <li><p>Armazenar temporariamente alterações não commitadas para trabalhar em outra tarefa.
+                Exemplo: <code>git stash</code>, <code>git stash save "Nome do stash"</code></p>
+                <p><strong>Comandos relacionados ao git stash:</strong></p>
+                <ul>
+                    <li>Exibir a lista de stashes disponíveis. Exemplo: <code>git stash list</code></li>
+                    <li><p>Aplicar e remover o stash mais recente da pilha. Exemplo: <code>git stash pop</code></p>
+                    </li>
+                    <li><p>Aplicar o stash mais recente sem removê-lo da pilha. Exemplo: <code>git stash apply</code></p>
+                    </li>
+                    <li><p>Aplicar um stash específico da pilha usando um índice n.
+                        Exemplo: <code>git stash apply stash@{2}</code></p>
+                    </li>
+                    <li><p>Remover um stash específico da pilha usando um índice n.
+                        Exemplo: <code>git stash drop stash@{1}</code></p>
+                    </li>
+                    <li><p>Exibir as alterações contidas em um stash específico da <pilha class=""></pilha>
+                        Exemplo: <code>git stash show stash@{0}</code></p>
+                    </li>
+                </ul>
+            </li>
+            <li><p> Aplicar um commit específico de uma branch para outra.
+                Exemplo: <code>git cherry-pick &lt;hash-do-commit&gt;</code>, <code>git cherr-ypick -n 2475e9a</code>
+            </p>
+                <p><strong>Diferença entre git stash e git cherrypick:</strong></p>
+                <ul>
+                    <li><p>O comando git stash é usado para armazenar temporariamente alterações não commitadas, permitindo que você as recupere mais tarde.</p></li>
+                    <li><p>O comando git cherrypick é usado para aplicar um commit específico de uma branch para outra.</p></li>
+                </ul>
+            </li>
+            <li><p>Combinar alterações de uma branch para outra. Exemplo: <code>git merge nome-da-branch</code></p>
+            </li>
+            <li><p>Exibir as diferenças entre commits, branches ou arquivos específicos.
+                Exemplo: <code>git diff branch1 branch2</code></p>
+            </li>
+            <li><p>Pesquisar por uma determinada string nos arquivos do repositório.
+                Exemplo: <code>git grep "palavra-chave"</code></p>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h1 id="github-student">Programa GitHub Student</h1>
+        <p>O programa "GitHub Student" é uma iniciativa destinada a estudantes, que oferece benefícios especiais para auxiliar
+            no desenvolvimento de projetos e colaboração no GitHub. Alguns dos benefícios incluem:</p>
+        <ul>
+            <li>Conta GitHub gratuita com recursos aprimorados.</li>
+            <li>Acesso a ferramentas e recursos exclusivos para estudantes.</li>
+            <li>Créditos em serviços de hospedagem e outros recursos úteis para projetos.</li>
+            <li>Participação em programas de aprendizado e eventos da comunidade.</li>
+            <li>Acesso ao Github Student Developer Pack.</li>
+        </ul>
+        <p>Para se inscrever no programa GitHub Student, acesse <a href="https://education.github.com/students">education.github.com/students</a> e siga as instruções fornecidas.</p>
+    </section>
+
+    <h1>Recursos e referências</h1>
+    <ul>
+        <li><a href="https://git-scm.com/">Site oficial do Git</a></li>
+        <li><a href="https://git-scm.com/book/pt-br/v2">Pro Git (Livro gratuito sobre Git)</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Git">Wikipédia Git</a></li>
+        <li><a href="https://blog-betrybe-com.webpkgcache.com/doc/-/s/blog.betrybe.com/git/">Blog sobre Git</a></li>
+    </ul>
+</main>
+
+<footer>
+    <a href="#">
+        <h1>
+            Voltar ao início
+        </h1>
+    </a>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
