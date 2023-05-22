@@ -29,6 +29,7 @@
             <li><a href="#comandos-basicos">Comandos básicos do Git </a></li>
             <li><a href="#comandos-avancados">Comandos avançados do Git </a></li>
             <li><a href="#github-student">Programa GitHub Student </a></li>
+            <li><a href="#padrao-nomenclatura">Padrões de nomenclatura </a></li>
         </ol>
     </section>
 
@@ -171,13 +172,64 @@
         <p>Para se inscrever no programa GitHub Student, acesse <a href="https://education.github.com/students">education.github.com/students</a> e siga as instruções fornecidas.</p>
     </section>
 
-    <h1>Recursos e referências</h1>
-    <ul>
-        <li><a href="https://git-scm.com/">Site oficial do Git</a></li>
-        <li><a href="https://git-scm.com/book/pt-br/v2">Pro Git (Livro gratuito sobre Git)</a></li>
-        <li><a href="https://pt.wikipedia.org/wiki/Git">Wikipédia Git</a></li>
-        <li><a href="https://blog-betrybe-com.webpkgcache.com/doc/-/s/blog.betrybe.com/git/">Blog sobre Git</a></li>
-    </ul>
+    <section>
+        <h1 id="padrao-nomenclatura">Padrões de nomenclatura</h1>
+        <p>
+            Para auxiliar no entendimento da equipe de desenvolvimento foi criado padrões de nomenclatura de branchs e commits.
+            Para branchs o padrão que recomendamos é o seguinte:
+        </p>
+
+        <p>
+            O nome da branch deverá ser divida em duas partes
+        </p>
+
+        <ol>
+            <li>
+                Prefixo: Categoria da branch, as categorias são as seguintes:
+            </li>
+            <ul>
+                <li>
+                    feature: para funcionalidades novas
+                </li>
+                <li>
+                    fix: para correção de um bug
+                </li>
+                <li>
+                    refactor: para refatoração do código
+                </li>
+                <li>
+                    doc: para mudanças na documentação
+                </li>
+                <li>
+                    style: para mudanças visuais (alteração na fonte, tamanho, cor, etc)
+                </li>
+            </ul>
+            <li>
+                Sufixo: Funcionalidade atribuida à branch
+            </li>
+        </ol>
+
+        <p>
+            Exemplos: feature/cadastro-usuario, style/cor-botao-cadastro
+        </p>
+
+        <p>
+            Para nomenclatura de commits uma boa descrição do que foi feito naquele commit já é o suficiente para auxiliar
+            os outros desenvolvedores a entender, de forma prévia, o que foi desenvolvido.
+        </p>
+
+    </section>
+
+    <section>
+        <h1>Recursos e referências</h1>
+        <ul>
+            <li><a href="https://git-scm.com/">Site oficial do Git</a></li>
+            <li><a href="https://git-scm.com/book/pt-br/v2">Pro Git (Livro gratuito sobre Git)</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Git">Wikipédia Git</a></li>
+            <li><a href="https://blog-betrybe-com.webpkgcache.com/doc/-/s/blog.betrybe.com/git/">Blog sobre Git</a></li>
+            <li><a href="https://medium.com/prolog-app/nossos-padr%C3%B5es-de-nomenclatura-para-branches-e-commits-fade8fd17106">Padrões de nomenclatura</a></li>
+        </ul>
+    </section>
 </main>
 
 <footer>
